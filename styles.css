@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+  color: #00e676;
+  margin-left: 20px;
+}
+
+nav {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container .btn {
+  background-color: #00e676;
+  color: #111;
+  padding: 6px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.container .btn:hover {
+  background-color: #00c853;
+}
+
+
+
+/* Hero */
+.hero {
+    height: 90vh;
+  text-align: center;
+  padding: 100px 20px;
+  background: url(./images/hero-back-2.jpg) no-repeat ;
+  background-size: 100% 100%;
+
+  display: flex;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.hero .btn {
+  background-color: #00e676;
+  color: #111;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background-color: #00c853;
+}
+
+/* Features */
+.features {
+  padding: 60px 0;
+  background-color: #181818;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #222;
+  padding: 20px;
+  border-left: 4px solid #00e676;
+  border-radius: 8px;
+}
+
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 0;
+  background-color: #181818;
+  text-align: center;
+}
+
+.testimonial-grid {
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  /* text-align: center; */
+  padding: 20px 0;
+  color: #666;
+}
+
+footer .container{
+    display: flex;
+  justify-content: space-between;
+}
